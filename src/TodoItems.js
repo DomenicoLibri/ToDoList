@@ -20,7 +20,10 @@ this.createTasks = this.createTasks.bind(this);
     var todoEntries = this.props.entries;
     var listItems = todoEntries.map(this.createTasks);
 
-    return(<ul className="theList"> {listItems} </ul>);
+    return(
+      <ul className="theList">
+       {listItems}
+       </ul>);
   }
 }
 
